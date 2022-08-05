@@ -2,6 +2,8 @@
 
 Check user already purchased a product in woocommerce
 
+1. Add this code to `functions.php` file
+
 ```
 function was_is_user_already_purchased()
 {
@@ -16,3 +18,12 @@ function was_is_user_already_purchased()
     return;
 }
 ```
+
+2. use it in your theme files
+
+```
+if(was_is_user_already_purchased()){
+   /// write your code here
+}
+```
+
